@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test系统">
+    <test name="suite">
+        <classes>
+            <class name="com.suite.SuiteConfig" />
+            <class name="com.testng.BasicAnnotation" />
+            <parameter value="haha" name="name"/>
+            <parameter value="11" name="age"/>
+        </classes>
+    </test>
+</suite>
+
