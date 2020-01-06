@@ -1,5 +1,6 @@
 package com.suite;
 
+import org.testng.Reporter;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -13,6 +14,7 @@ import org.testng.annotations.Test;
 public class SuiteConfig1 {
     @Test(invocationCount = 10,threadPoolSize = 3)
     public void test1(){
+        Reporter.log("自己的日志");
         System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
     }
 }
